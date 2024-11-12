@@ -8,6 +8,11 @@
     --line-clamp: 2;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -17,7 +22,7 @@ body {
     font-family: "Poppins", "sans-serif";
 }
 
-/* Common */
+/* ==========================Common========================== */
 
 .heading {
     color: #171100;
@@ -83,7 +88,7 @@ a {
     cursor: pointer;
 }
 
-/* Header */
+/* ==========================Header========================== */
 
 .header {
     background: #fffcf4;
@@ -120,7 +125,6 @@ a {
 .nav a:hover,
 .nav li.active a {
     color: #171100;
-    /* font-weight: 600; */
     text-shadow: 1px 0 0 currentColor;
 }
 
@@ -140,7 +144,7 @@ a {
     min-width: 144px;
 }
 
-/* Hero */
+/* ==========================Hero========================== */
 
 .hero {
     padding: 57px 0 65px;
@@ -283,7 +287,7 @@ a {
     line-height: 1.22; /* 122.727% */
 }
 
-/* Popular */
+/* ==========================Popular========================== */
 
 .popular {
     padding: 200px 0;
@@ -407,7 +411,7 @@ a {
     background: var(--primary-color);
 }
 
-/* Feedback */
+/* ==========================Feedback========================== */
 
 .feedback {
     padding: 96px 0;
@@ -482,7 +486,7 @@ a {
     line-height: 1.53; /* 153.846% */
 }
 
-/* Features */
+/* ==========================Features========================== */
 .features {
     padding: 200px 0;
 }
@@ -551,7 +555,7 @@ a {
     order: 2;
 }
 
-/* Blog */
+/* ==========================Blog========================== */
 
 .blog {
     background: #fffcf4;
@@ -671,4 +675,79 @@ a {
 .blog .dot.active {
     background-color: var(--primary-color);
     cursor: default;
+}
+
+/* ==========================Footer========================== */
+footer {
+    padding: 96px 135px 0;
+    background: #2e2100;
+}
+
+footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+footer .row .column {
+    width: 21.6%;
+}
+
+footer .row .column:first-child {
+    width: 35%;
+}
+
+footer .desc {
+    max-width: 267px;
+    margin-top: 18px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+footer .social {
+    margin-top: 18px;
+    gap: 18px;
+    display: flex;
+}
+
+footer .column .title {
+    display: inline-block;
+    padding: 0 48px 14px 0;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    border-bottom: 1px solid #59554b;
+}
+
+footer .column .list {
+    margin-top: 28px;
+}
+
+footer .column .list a {
+    margin-bottom: 12px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+footer .column .list li:last-child a {
+    margin-bottom: 0;
+}
+
+footer .column .list strong {
+    font-weight: 600;
+    color: #fff;
+}
+
+footer .copy-right p {
+    padding: 28px 0;
+    color: #807d74;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
 }
